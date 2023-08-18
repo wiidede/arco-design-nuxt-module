@@ -1,0 +1,33 @@
+import { addComponent } from '@nuxt/kit'
+import { iconLibraryName, libraryName } from '../config'
+import { hyphenate } from '../utils'
+import type { InnerOptions } from '../types'
+
+export function resolveComponents(config: InnerOptions) {
+  const { components, subComponentsMap, icons } = config
+
+  if (!components)
+    return
+  const allComponents = new Set(components)
+  allComponents.forEach((name) => {
+    const componentName = subComponentsMap[name] || name
+    const dir = hyphenate(componentName)
+    const filePath = `${libraryName}/es/${dir}/index`
+
+    addComponent({
+      export: name === componentName ? 'default' : name,
+      name: `A${name}`,
+      filePath,
+    })
+  })
+
+  if (!icons)
+    return
+  icons.forEach((icon) => {
+    addComponent({
+      export: icon,
+      name: icon,
+      filePath: iconLibraryName,
+    })
+  })
+}
