@@ -2,7 +2,7 @@
   "name": "arco-design-nuxt-module",
   "type": "module",
   "version": "1.0.0",
-  "description": "arco-design-nuxt-module",
+  "description": "Arco Design Nuxt Module",
   "license": "MIT",
   "repository": "wiidede/arco-design-nuxt-module",
   "exports": {
