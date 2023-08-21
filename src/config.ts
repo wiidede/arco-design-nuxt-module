@@ -1,14 +1,18 @@
-import AllComponents from '@arco-design/web-vue'
-import * as AllIcons from '@arco-design/web-vue/es/icon'
+import * as AllComponents from '@arco-design/web-vue'
+
+// FIXME: Directory import 'node_modules\@arco-design\web-vue\es\icon' is not supported resolving ES modules imported from dist\module.mjs
+// import * as AllIcons from '@arco-design/web-vue/es/icon'
 import type { Options } from './types'
 
 export const libraryName = '@arco-design/web-vue'
 
 export const iconLibraryName = '@arco-design/web-vue/es/icon'
 
-export const allIcons = Object.keys(AllIcons).filter(name =>
-  name !== 'install',
-)
+// export const allIcons = Object.keys(AllIcons).filter(name =>
+//   !['install', 'default'].includes(name),
+// )
+
+const allIcons = ['allIcons IconArrowDown', 'IconArrowFall', 'IconArrowLeft', 'IconArrowRight', 'IconArrowRise', 'IconArrowUp', 'IconCaretDown', 'IconCaretLeft', 'IconCaretRight', 'IconCaretUp', 'IconDoubleDown', 'IconDoubleLeft', 'IconDoubleRight', 'IconDoubleUp', 'IconDownCircle', 'IconDown', 'IconDragArrow', 'IconExpand', 'IconLeftCircle', 'IconLeft', 'IconMenuFold', 'IconMenuUnfold', 'IconRightCircle', 'IconRight', 'IconRotateLeft', 'IconRotateRight', 'IconShrink', 'IconSwap', 'IconToBottom', 'IconToLeft', 'IconToRight', 'IconToTop', 'IconUpCircle', 'IconUp', 'IconCheckCircleFill', 'IconCloseCircleFill', 'IconExclamationCircleFill', 'IconExclamationPolygonFill', 'IconInfoCircleFill', 'IconMinusCircleFill', 'IconPlusCircleFill', 'IconQuestionCircleFill', 'IconCheckCircle', 'IconCheckSquare', 'IconCheck', 'IconClockCircle', 'IconCloseCircle', 'IconClose', 'IconExclamationCircle', 'IconExclamation', 'IconInfoCircle', 'IconInfo', 'IconMinusCircle', 'IconMinus', 'IconPlusCircle', 'IconPlus', 'IconQuestionCircle', 'IconQuestion', 'IconStop', 'IconHeartFill', 'IconStarFill', 'IconThumbDownFill', 'IconThumbUpFill', 'IconAt', 'IconCloudDownload', 'IconCodeBlock', 'IconCodeSquare', 'IconCode', 'IconCustomerService', 'IconDownload', 'IconExport', 'IconEyeInvisible', 'IconEye', 'IconHeart', 'IconHistory', 'IconHome', 'IconImport', 'IconLaunch', 'IconList', 'IconMessageBanned', 'IconMessage', 'IconMoreVertical', 'IconMore', 'IconPoweroff', 'IconRefresh', 'IconReply', 'IconSave', 'IconScan', 'IconSearch', 'IconSelectAll', 'IconSend', 'IconSettings', 'IconShareAlt', 'IconShareExternal', 'IconShareInternal', 'IconStar', 'IconSync', 'IconThumbDown', 'IconThumbUp', 'IconTranslate', 'IconUpload', 'IconVoice', 'IconAlignCenter', 'IconAlignLeft', 'IconAlignRight', 'IconAttachment', 'IconBgColors', 'IconBold', 'IconBrush', 'IconCopy', 'IconDelete', 'IconEdit', 'IconEraser', 'IconFilter', 'IconFindReplace', 'IconFontColors', 'IconFormula', 'IconH1', 'IconH2', 'IconH3', 'IconH4', 'IconH5', 'IconH6', 'IconH7', 'IconHighlight', 'IconItalic', 'IconLineHeight', 'IconLink', 'IconObliqueLine', 'IconOrderedList', 'IconOriginalSize', 'IconPaste', 'IconQuote', 'IconRedo', 'IconScissor', 'IconSortAscending', 'IconSortDescending', 'IconSort', 'IconStrikethrough', 'IconUnderline', 'IconUndo', 'IconUnorderedList', 'IconZoomIn', 'IconZoomOut', 'IconMuteFill', 'IconPauseCircleFill', 'IconPlayArrowFill', 'IconPlayCircleFill', 'IconSkipNextFill', 'IconSkipPreviousFill', 'IconSoundFill', 'IconBackward', 'IconForward', 'IconFullscreenExit', 'IconFullscreen', 'IconLiveBroadcast', 'IconMusic', 'IconMute', 'IconPauseCircle', 'IconPause', 'IconPlayArrow', 'IconPlayCircle', 'IconRecordStop', 'IconRecord', 'IconSkipNext', 'IconSkipPrevious', 'IconSound', 'IconBytedanceColor', 'IconLarkColor', 'IconTiktokColor', 'IconXiguaColor', 'IconFaceBookCircleFill', 'IconFacebookSquareFill', 'IconGoogleCircleFill', 'IconQqCircleFill', 'IconTwitterCircleFill', 'IconWeiboCircleFill', 'IconAlipayCircle', 'IconCodeSandbox', 'IconCodepen', 'IconFacebook', 'IconGithub', 'IconGitlab', 'IconGoogle', 'IconQqZone', 'IconQq', 'IconTwitter', 'IconWechat', 'IconWechatpay', 'IconWeibo', 'IconChineseFill', 'IconEnglishFill', 'IconFaceFrownFill', 'IconFaceMehFill', 'IconFaceSmileFill', 'IconMoonFill', 'IconPenFill', 'IconSunFill', 'IconApps', 'IconArchive', 'IconBarChart', 'IconBook', 'IconBookmark', 'IconBranch', 'IconBug', 'IconBulb', 'IconCalendarClock', 'IconCalendar', 'IconCamera', 'IconCloud', 'IconCommand', 'IconCommon', 'IconCompass', 'IconComputer', 'IconCopyright', 'IconDashboard', 'IconDesktop', 'IconDice', 'IconDragDotVertical', 'IconDragDot', 'IconDriveFile', 'IconEar', 'IconEmail', 'IconEmpty', 'IconExperiment', 'IconFileAudio', 'IconFileImage', 'IconFilePdf', 'IconFileVideo', 'IconFile', 'IconFire', 'IconFolderAdd', 'IconFolderDelete', 'IconFolder', 'IconGift', 'IconIdcard', 'IconImageClose', 'IconImage', 'IconInteraction', 'IconLanguage', 'IconLayers', 'IconLayout', 'IconLoading', 'IconLocation', 'IconLock', 'IconLoop', 'IconMan', 'IconMenu', 'IconMindMapping', 'IconMobile', 'IconMoon', 'IconMosaic', 'IconNav', 'IconNotificationClose', 'IconNotification', 'IconPalette', 'IconPen', 'IconPhone', 'IconPrinter', 'IconPublic', 'IconPushpin', 'IconQrcode', 'IconRelation', 'IconRobotAdd', 'IconRobot', 'IconSafe', 'IconSchedule', 'IconShake', 'IconSkin', 'IconStamp', 'IconStorage', 'IconSubscribeAdd', 'IconSubscribe', 'IconSubscribed', 'IconSun', 'IconTag', 'IconTags', 'IconThunderbolt', 'IconTool', 'IconTrophy', 'IconUnlock', 'IconUserAdd', 'IconUserGroup', 'IconUser', 'IconVideoCamera', 'IconWifi', 'IconWoman']
 
 // locale
 export const allLocales = [
@@ -30,7 +34,7 @@ export const allComponents = Object.keys(AllComponents).filter(name =>
   !allLocales.includes(name)
   && !allHooks.includes(name)
   && !allImportsWithStyle.includes(name)
-  && name !== 'install',
+  && !['install', 'default'].includes(name),
 )
 
 const allNoStylesComponents: string[] = [
