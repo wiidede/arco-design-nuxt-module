@@ -13,10 +13,23 @@ jobs:
         with:
           fetch-depth: 0
 
+      - uses: pnpm/action-setup@v2
+
       - uses: actions/setup-node@v3
         with:
           node-version: 18.x
+          cache: pnpm
+          registry-url: 'https://registry.npmjs.org'
+
+      - run: pnpm i
+
+      - run: pnpm prepack
 
       - run: npx changelogithub
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - run: pnpm publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NPM_CONFIG_PROVENANCE: true
