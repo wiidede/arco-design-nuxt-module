@@ -23,6 +23,8 @@ jobs:
 
       - run: pnpm i --shamefully-hoist
 
+      - run: pnpm dev:prepare
+
       - run: pnpm prepack
 
       - run: npx changelogithub
