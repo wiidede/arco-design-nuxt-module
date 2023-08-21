@@ -16,7 +16,7 @@ export function resolveComponents(config: InnerOptions) {
 
     addComponent({
       export: name === componentName ? 'default' : name,
-      name: `A${name}`,
+      name: `${config.componentPrefix}${name}`,
       filePath,
     })
   })
@@ -26,7 +26,7 @@ export function resolveComponents(config: InnerOptions) {
   icons.forEach((icon) => {
     addComponent({
       export: icon,
-      name: icon,
+      name: `${config.iconPrefix}${icon}`,
       filePath: iconLibraryName,
     })
   })

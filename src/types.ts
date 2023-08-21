@@ -16,6 +16,14 @@ export interface Options extends TransformOptions {
    * ```
    */
   components: false | string[]
+
+  /**
+   * Prefix of the component name.
+   *
+   * @default 'A'
+   */
+  componentPrefix: string
+
   /**
    * A list of components that need to be automatically imported externally.
    *
@@ -27,10 +35,19 @@ export interface Options extends TransformOptions {
    * ```
    */
   icons: false | string[]
+
+  /**
+   * Prefix of the icon component name.
+   *
+   * @default ''
+   */
+  iconPrefix: string
+
   /**
    * A map of components that the definition file of subComponent is in its parent component.
    */
   subComponents: Record<string, string[]>
+
   /**
    * A list of imports that need to be automatically imported externally.
    *
@@ -39,7 +56,15 @@ export interface Options extends TransformOptions {
    *  ['Notification', 'Message']
    * ```
    */
-  imports: false | string[]
+  imports: false | ('Notification' | 'Message')[]
+
+  /**
+   * Prefix of the import name.
+   *
+   * @default ''
+   */
+  importPrefix: string
+
   /**
    * When you need to add automatically import content from Arco Design Vue, you can add it here.
    *
@@ -51,7 +76,18 @@ export interface Options extends TransformOptions {
    * ```
    *
    */
-  locales: false | string[]
+  locales: false | ('useLocale' | 'getLocale' | 'addI18nMessages')[]
+
+  /**
+   * Prefix of the locale name.
+   *
+   * @default ''
+   *
+   * @example
+   * 'A' -> 'useALocale'
+   */
+  localePrefix: string
+
   /**
    * When you need to add automatically import content from Arco Design Vue, you can add it here.
    *
@@ -61,7 +97,17 @@ export interface Options extends TransformOptions {
    * ```
    *
    */
-  hooks: false | string[]
+  hooks: false | ('useFormItem')[]
+
+  /**
+   * Prefix of the hook name.
+   *
+   * @default ''
+   *
+   * @example 'A' -> 'useAFormItem'
+   */
+  hookPrefix: string
+
   /**
    * import style css or less with components
    *
@@ -70,6 +116,7 @@ export interface Options extends TransformOptions {
    * Disable automatically import styles with `false`
    */
   importStyle: 'css' | 'less' | boolean
+
   /**
    * A list of component names that have no styles, so resolving their styles file should be prevented
    *

@@ -88,11 +88,16 @@ const defaultExclude: RegExp[] = [
 
 export const defaults: Options = {
   components: allComponents,
+  componentPrefix: 'A',
   icons: allIcons,
+  iconPrefix: '',
   subComponents: allSubComponents,
   imports: allImportsWithStyle,
+  importPrefix: '',
   locales: false,
+  localePrefix: '',
   hooks: allHooks,
+  hookPrefix: '',
   importStyle: 'css',
   noStylesComponents: allNoStylesComponents,
   include: defaultInclude,

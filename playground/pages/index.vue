@@ -5,14 +5,17 @@ const form = reactive({
 })
 
 function handleMessage() {
-  Message.info('This is an info message')
+  AMessage.info('This is an info message')
 }
 function handleNotification() {
-  Notification.success('This is a success message!')
+  ANotification.success('This is a success message!')
 }
 </script>
 
 <template>
+  <span>
+    arco locale: {{ getArcoLocale() }}
+  </span>
   <div :style="{ display: 'flex', justifyContent: 'space-around' }">
     <a-button @click="handleMessage">
       Info Message

@@ -4,14 +4,14 @@ import type { LayoutSiderInstance } from '@arco-design/web-vue/es'
 const collapsed = ref(false)
 const onCollapse: LayoutSiderInstance['onCollapse'] = (val, type) => {
   const content = type === 'responsive' ? '触发响应式收缩' : '点击触发收缩'
-  Message.info({
+  AMessage.info({
     content,
     duration: 2000,
   })
   collapsed.value = val
 }
 const onClickMenuItem: ((key: string) => void) | undefined = (key) => {
-  Message.info({ content: `You select ${key}`, showIcon: true })
+  AMessage.info({ content: `You select ${key}`, showIcon: true })
 }
 </script>
 

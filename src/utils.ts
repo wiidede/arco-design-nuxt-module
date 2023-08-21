@@ -48,3 +48,7 @@ export function camelize(value: string): string {
 export function hyphenate(value: string): string {
   return value.replace(/\B([A-Z])/g, '-$1').toLowerCase()
 }
+
+export function insertPrefix(value: string, prefix: string): string {
+  return value.replace(/^(\w+?)(\B)([A-Z])/, (m, a, b, c) => `${a}${prefix}${c}`)
+}

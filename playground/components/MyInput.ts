@@ -1,7 +1,7 @@
 export default defineComponent({
   emits: ['update:modelValue'],
   setup(_, { emit }) {
-    const { mergedDisabled, eventHandlers } = useFormItem()
+    const { mergedDisabled, eventHandlers } = useArcoFormItem()
     const handleInput = (ev: any) => {
       const { value } = ev.target
       emit('update:modelValue', value)

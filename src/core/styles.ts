@@ -21,10 +21,11 @@ export function resolveStyles(config: InnerOptions, name: string) {
   if ((imports || []).includes(name) && allImportsWithStyle.includes(name))
     return getStyleDir(config, name)
 
-  if (!/^A[A-Z]/.test(name))
+  const nameReg = new RegExp(`^${config.componentPrefix}[A-Z]`)
+  if (!nameReg.test(name))
     return undefined
 
-  const componentName = name.slice('A'.length)
+  const componentName = name.slice(config.componentPrefix.length)
 
   if (!(components || []).includes(componentName) || noStylesComponents.includes(name))
     return undefined
