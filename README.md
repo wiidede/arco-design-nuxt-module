@@ -14,18 +14,21 @@ Find and replace all on all files (CMD+SHIFT+F):
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-Arco Design Nuxt Module for doing amazing things.
+Arco Design Vue's Nuxt Module.
 
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
-<!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/arco-design-nuxt-module?file=playground%2Fapp.vue) -->
+- [Release Notes](/CHANGELOG.md)
+- [Online playground](https://stackblitz.com/github/wiidede/arco-design-nuxt-module?file=playground%2Fapp.vue)
 <!-- - [📖 &nbsp;Documentation](https://example.com) -->
 
 ## Features
 
 <!-- Highlight some of the features your module provide here -->
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
+- ✨ auto import components
+- ✨ auto import icons
+- ✨ auto import Message, Notification
+- ✨ auto import hooks
+- ✨ auto import locale hooks
+- 🔹 support custom prefix above
 
 ## Quick Setup
 
