@@ -5,6 +5,7 @@
   "description": "Arco Design Nuxt Module",
   "license": "MIT",
   "repository": "wiidede/arco-design-nuxt-module",
+  "packageManager": "pnpm@8.6.12",
   "exports": {
     ".": {
       "types": "./dist/types.d.ts",
@@ -46,6 +47,7 @@
     "bumpp": "^9.2.0",
     "eslint": "^8.46.0",
     "nuxt": "^3.6.5",
+    "pnpm": "^8.6.12",
     "vitest": "^0.34.1"
   }
 }
