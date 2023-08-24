@@ -18,7 +18,7 @@ export function getStyleDir(config: InnerOptions, name: string) {
 export function resolveStyles(config: InnerOptions, name: string) {
   const { components, noStylesComponents, imports } = config
 
-  if ((imports || []).includes(name) && allImportsWithStyle.includes(name))
+  if ((imports || []).includes(name as any) && (allImportsWithStyle || []).includes(name as any))
     return getStyleDir(config, name)
 
   const nameReg = new RegExp(`^${config.componentPrefix}[A-Z]`)

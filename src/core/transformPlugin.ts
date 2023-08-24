@@ -14,7 +14,7 @@ interface PluginOptions extends TransformOptions {
 }
 
 const componentsRegExp = /(?<=[ (])_?resolveComponent\(\s*["'](lazy-|Lazy)?([^'"]*?)["'][\s,]*[^)]*\)/g
-const importsRegExp = toRegExp(allImportsWithStyle, 'g')
+const importsRegExp = toRegExp(allImportsWithStyle || [], 'g')
 
 export const transformPlugin = createUnplugin((options: PluginOptions) => {
   const { include, exclude, transformStyles } = options

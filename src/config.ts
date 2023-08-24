@@ -21,19 +21,19 @@ export const allLocales = [
   'getLocale',
 ]
 
-export const allHooks = [
+export const allHooks: Options['hooks'] = [
   'useFormItem',
 ]
 
-export const allImportsWithStyle: string[] = [
+export const allImportsWithStyle: Options['imports'] = [
   'Notification',
   'Message',
 ]
 
 export const allComponents = Object.keys(AllComponents).filter(name =>
   !allLocales.includes(name)
-  && !allHooks.includes(name)
-  && !allImportsWithStyle.includes(name)
+  && !allHooks.includes(name as any)
+  && !allImportsWithStyle.includes(name as any)
   && !['install', 'default'].includes(name),
 )
 
