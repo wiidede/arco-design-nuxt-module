@@ -8,6 +8,7 @@ import {
 } from './core/index'
 import type { Options } from './types'
 import { computeOptions } from './utils'
+import { resolveOptions } from './core/options'
 
 export default defineNuxtModule<Options>({
   meta: {
@@ -18,6 +19,7 @@ export default defineNuxtModule<Options>({
   setup(_options, nuxt) {
     const options = computeOptions(_options)
 
+    resolveOptions()
     nuxt.options.imports.autoImport !== false && resolveImports(options)
     nuxt.options.components !== false && resolveComponents(options)
 
