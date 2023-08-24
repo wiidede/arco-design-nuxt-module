@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   imports: {
-    autoImport: true, // TODO default false ???
+    autoImport: true,
   },
   modules: ['../src/module'],
   arco: {
