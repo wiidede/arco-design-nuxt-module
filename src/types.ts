@@ -6,7 +6,7 @@ export interface TransformOptions {
 
 export interface Options extends TransformOptions {
   /**
-   * A list of components that need to be automatically imported externally.
+   * A list of components that need to be automatically imported.
    *
    * @default 'from @arco-design/web-vue/'
    *
@@ -25,7 +25,7 @@ export interface Options extends TransformOptions {
   componentPrefix: string
 
   /**
-   * A list of components that need to be automatically imported externally.
+   * A list of icons component that need to be automatically imported.
    *
    * @default 'from @arco-design/web-vue/es/icon'
    *
@@ -45,11 +45,12 @@ export interface Options extends TransformOptions {
 
   /**
    * A map of components that the definition file of subComponent is in its parent component.
+   * Normally, you don't need to set it.
    */
   subComponents: Record<string, string[]>
 
   /**
-   * A list of imports that need to be automatically imported externally.
+   * A list of imports(with style auto import) that need to be automatically imported.
    *
    * @default
    * ```ts
@@ -66,7 +67,7 @@ export interface Options extends TransformOptions {
   importPrefix: string
 
   /**
-   * When you need to add automatically import content from Arco Design Vue, you can add it here.
+   * When you need to add automatically import locale function from Arco Design Vue, you can add it here.
    *
    * @default false
    *
@@ -89,7 +90,7 @@ export interface Options extends TransformOptions {
   localePrefix: string
 
   /**
-   * When you need to add automatically import content from Arco Design Vue, you can add it here.
+   * When you need to add automatically import hooks from Arco Design Vue, you can add it here.
    *
    * @default
    * ```ts
