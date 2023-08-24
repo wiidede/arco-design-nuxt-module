@@ -2,10 +2,10 @@
   "name": "arco-design-nuxt-module",
   "type": "module",
   "version": "0.0.9",
+  "packageManager": "pnpm@8.6.12",
   "description": "Arco Design Nuxt Module",
   "license": "MIT",
   "repository": "wiidede/arco-design-nuxt-module",
-  "packageManager": "pnpm@8.6.12",
   "exports": {
     ".": {
       "types": "./dist/types.d.ts",
