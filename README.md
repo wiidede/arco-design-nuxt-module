@@ -10,7 +10,7 @@
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 
-Arco Design Vue's Nuxt Module. Automatically import components, icons, Message, Notification and more.
+Nuxt Module for Arco Design Vue. Automatically import components, icons and more.
 
 ## Features
 
