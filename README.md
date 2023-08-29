@@ -1,15 +1,16 @@
-# Arco Design Nuxt Module
+<div align="center">
+<img height="50px" src='https://github.com/arco-design.png' alt="Arco Design">
+<img height="100px" src='https://github.com/wiidede/arco-design-nuxt-module/raw/main/arco-design-nuxt-module.svg' alt="Arco Design Nuxt Module Logo">
+<img height="50px" src='https://nuxt.com/assets/design-kit/logo/icon-green.svg' alt="Nuxt">
+<br>
+<h1>Arco Design Nuxt Module</p>
+</div>
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
-[![Nuxt][nuxt-src]][nuxt-href]
 
-Arco Design Vue's Nuxt Module.
-
-- [Release Notes](https://github.com/wiidede/arco-design-nuxt-module/releases)
-- [Online playground](https://stackblitz.com/github/wiidede/arco-design-nuxt-module?file=playground%2Fapp.vue)
-<!-- - [📖 &nbsp;Documentation](https://example.com) -->
+Arco Design Vue's Nuxt Module. Automatically import components, icons, Message, Notification and more.
 
 ## Features
 
@@ -194,31 +195,11 @@ interface Options {
 
 That's it! You can now use Arco Design Nuxt Module in your Nuxt app ✨
 
-## Development
+## Other
 
-```bash
-# Install dependencies
-npm install
-
-# Generate type stubs
-npm run dev:prepare
-
-# Develop with the playground
-npm run dev
-
-# Build the playground
-npm run dev:build
-
-# Run ESLint
-npm run lint
-
-# Run Vitest
-npm run test
-npm run test:watch
-
-# Release new version
-npm run release
-```
+- [Release Notes](https://github.com/wiidede/arco-design-nuxt-module/releases)
+- [Online playground](https://stackblitz.com/github/wiidede/arco-design-nuxt-module?file=playground%2Fapp.vue)
+<!-- - [📖 &nbsp;Documentation](https://example.com) -->
 
 ## Credits
 
@@ -238,5 +219,4 @@ Thanks to:
 [license-src]: https://img.shields.io/npm/l/arco-design-nuxt-module.svg?style=flat&colorA=18181B&colorB=28CF8D
 [license-href]: https://npmjs.com/package/arco-design-nuxt-module
 
-[nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
