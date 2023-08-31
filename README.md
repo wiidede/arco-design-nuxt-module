@@ -1,7 +1,7 @@
 <div align="center">
-<img height="50px" src='https://github.com/arco-design.png' alt="Arco Design">
-<img height="100px" src='https://github.com/wiidede/arco-design-nuxt-module/raw/main/arco-design-nuxt-module.svg' alt="Arco Design Nuxt Module Logo">
-<img height="50px" src='https://nuxt.com/assets/design-kit/logo/icon-green.svg' alt="Nuxt">
+<img height="50px" width="50px" src='https://github.com/arco-design.png' alt="Arco Design">
+<img height="100px" width="100px" src='https://github.com/wiidede/arco-design-nuxt-module/raw/main/arco-design-nuxt-module.svg' alt="Arco Design Nuxt Module Logo">
+<img height="50px" width="50px" src='https://nuxt.com/assets/design-kit/logo/icon-green.svg' alt="Nuxt">
 <br>
 <h1>Arco Design Nuxt Module</p>
 </div>
