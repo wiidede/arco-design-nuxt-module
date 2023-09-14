@@ -27,7 +27,7 @@ function handleNotification() {
   <a-divider />
   <a-row :gutter="24">
     <a-col :span="12">
-      <a-card :style="{ width: '360px', margin: 'auto' }" title="Arco Card">
+      <a-card :style="{ width: '360px', margin: 'auto' }" title="Arco Icons">
         <template #extra>
           <a-link>More</a-link>
         </template>

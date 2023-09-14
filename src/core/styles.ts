@@ -9,6 +9,13 @@ export function getStyleDir(config: InnerOptions, name: string) {
   const dir = hyphenate(config.subComponentsMap[name] || name)
   const type = config.importStyle
 
+  if (config.theme) {
+    if (type === 'less')
+      return `${config.theme}/theme.less`
+    if (type === 'css' || type)
+      return `${config.theme}/css/arco.css`
+  }
+
   if (type === 'less')
     return `${libraryName}/es/${dir}/style/index.js`
   if (type === 'css' || type)

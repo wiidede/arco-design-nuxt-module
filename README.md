@@ -182,6 +182,19 @@ interface Options {
   importStyle: 'css' | 'less' | boolean
 
   /**
+   * use arco design theme.
+   *
+   * @default undefined
+   *
+   * @example '@arco-themes/vue-digitforce'
+   *
+   * It will full import the theme style file(theme.less or css/arco.css)
+   *
+   * for more detail about theme, see https://arco.design/docs/designlab/use-theme-package
+   */
+  theme: string
+
+  /**
    * A list of component names that have no styles, so resolving their styles file should be prevented
    *
    * @default

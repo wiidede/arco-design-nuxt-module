@@ -22,6 +22,9 @@ devDependencies:
   '@arco-design/web-vue':
     specifier: ^2.51.1
     version: 2.51.1(vue@3.3.4)
+  '@arco-themes/vue-digitforce':
+    specifier: ^0.1.3
+    version: 0.1.3(@arco-design/web-vue@2.51.1)
   '@nuxt/devtools':
     specifier: latest
     version: 0.8.3(nuxt@3.7.3)(rollup@3.29.1)(vite@4.4.9)
@@ -188,6 +191,14 @@ packages:
       resize-observer-polyfill: 1.5.1
       scroll-into-view-if-needed: 2.2.31
       vue: 3.3.4
+    dev: true
+
+  /@arco-themes/vue-digitforce@0.1.3(@arco-design/web-vue@2.51.1):
+    resolution: {integrity: sha512-W5ti01UScqGgwDZNxWA/XN5z66IEhlgnCLWkhC8Af1Au10pFgdTcRaZ2oDbQI+GGQIjIBxyFh3jU5Pqc8ehsFw==}
+    peerDependencies:
+      '@arco-design/web-vue': ^2.46.1
+    dependencies:
+      '@arco-design/web-vue': 2.51.1(vue@3.3.4)
     dev: true
 
   /@babel/code-frame@7.22.10:
