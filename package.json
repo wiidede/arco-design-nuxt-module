@@ -2,7 +2,7 @@
   "name": "arco-design-nuxt-module",
   "type": "module",
   "version": "0.0.14",
-  "packageManager": "pnpm@8.6.12",
+  "packageManager": "pnpm@8.7.5",
   "description": "Arco Design Nuxt Module",
   "license": "MIT",
   "repository": "wiidede/arco-design-nuxt-module",
@@ -33,22 +33,22 @@
     "@arco-design/web-vue": ">=2"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.6.5",
-    "magic-string": "^0.30.2",
+    "@nuxt/kit": "^3.7.3",
+    "magic-string": "^0.30.3",
     "unplugin": "^1.4.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.40.2",
-    "@arco-design/web-vue": "^2.50.0",
+    "@antfu/eslint-config": "^0.42.0",
+    "@arco-design/web-vue": "^2.51.1",
     "@nuxt/devtools": "latest",
-    "@nuxt/module-builder": "^0.4.0",
-    "@nuxt/schema": "^3.6.5",
-    "@nuxt/test-utils": "^3.6.5",
-    "@types/node": "^18.17.3",
+    "@nuxt/module-builder": "^0.5.1",
+    "@nuxt/schema": "^3.7.3",
+    "@nuxt/test-utils": "^3.7.3",
+    "@types/node": "^18.17.15",
     "bumpp": "^9.2.0",
-    "eslint": "^8.46.0",
-    "nuxt": "^3.6.5",
-    "pnpm": "^8.6.12",
-    "vitest": "^0.34.1"
+    "eslint": "^8.49.0",
+    "nuxt": "^3.7.3",
+    "pnpm": "^8.7.5",
+    "vitest": "^0.34.4"
   }
 }
