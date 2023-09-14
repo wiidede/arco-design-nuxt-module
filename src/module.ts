@@ -30,7 +30,7 @@ export default defineNuxtModule<Options>({
       config.plugins.push(transformPlugin.vite({
         include: options.include,
         exclude: options.exclude,
-        sourcemap: nuxt.options.sourcemap[mode],
+        sourcemap: !!nuxt.options.sourcemap[mode],
         transformStyles: name => resolveStyles(options, name),
       }))
     })
@@ -43,7 +43,7 @@ export default defineNuxtModule<Options>({
         config.plugins.push(transformPlugin.webpack({
           include: options.include,
           exclude: options.exclude,
-          sourcemap: nuxt.options.sourcemap[mode],
+          sourcemap: !!nuxt.options.sourcemap[mode],
           transformStyles: name => resolveStyles(options, name),
         }))
       })
