@@ -8,7 +8,7 @@ export interface Options extends TransformOptions {
   /**
    * A list of components that need to be automatically imported.
    *
-   * @default 'from @arco-design/web-vue/'
+   * @default * all component from '@arco-design/web-vue/'
    *
    * @example
    * ```ts
@@ -27,7 +27,7 @@ export interface Options extends TransformOptions {
   /**
    * A list of icons component that need to be automatically imported.
    *
-   * @default 'from @arco-design/web-vue/es/icon'
+   * @default * all icons from '@arco-design/web-vue/es/icon'
    *
    * @example
    * ```ts
