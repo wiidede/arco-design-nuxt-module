@@ -99,6 +99,7 @@ export const defaults: Options = {
   hooks: allHooks,
   hookPrefix: '',
   importStyle: 'css',
+  theme: undefined,
   noStylesComponents: allNoStylesComponents,
   include: defaultInclude,
   exclude: defaultExclude,

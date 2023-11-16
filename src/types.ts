@@ -129,7 +129,7 @@ export interface Options extends TransformOptions {
    *
    * for more detail about theme, see https://arco.design/docs/designlab/use-theme-package
    */
-  theme: string
+  theme: string | undefined
 
   /**
    * A list of component names that have no styles, so resolving their styles file should be prevented
