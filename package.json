@@ -1,7 +1,7 @@
 {
   "name": "arco-design-nuxt-module",
   "type": "module",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "packageManager": "pnpm@8.10.5",
   "description": "Arco Design Nuxt Module",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "dev:build": "nuxi build playground",
     "dev:preview": "nuxi preview playground",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
-    "release": "npm run lint && npm run prepack && bumpp package.json --commit --push --tag",
+    "release": "pnpm lint && pnpm typecheck && pnpm prepack && bumpp package.json --commit --push --tag",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
