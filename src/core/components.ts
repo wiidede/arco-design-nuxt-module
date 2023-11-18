@@ -1,5 +1,5 @@
 import { addComponent } from '@nuxt/kit'
-import { iconLibraryName, libraryName } from '../config'
+import { libraryName } from '../config'
 import { hyphenate } from '../utils'
 import type { InnerOptions } from '../types'
 
@@ -12,7 +12,7 @@ export function resolveComponents(config: InnerOptions) {
   allComponents.forEach((name) => {
     const componentName = subComponentsMap[name] || name
     const dir = hyphenate(componentName)
-    const filePath = `${libraryName}/es/${dir}/index`
+    const filePath = `${libraryName}/${config.importFrom}/${dir}/index`
 
     addComponent({
       export: name === componentName ? 'default' : name,
@@ -27,7 +27,7 @@ export function resolveComponents(config: InnerOptions) {
     addComponent({
       export: icon,
       name: `${config.iconPrefix}${icon}`,
-      filePath: iconLibraryName,
+      filePath: `${libraryName}/${config.importFrom}/icon`,
     })
   })
 }

@@ -200,6 +200,14 @@ interface Options {
    * ```
    */
   noStylesComponents: string[]
+
+  /**
+   * import from es or lib
+   *
+   * @default 'es'
+   *
+   */
+  importFrom: 'es' | 'lib'
 }
 ```
 

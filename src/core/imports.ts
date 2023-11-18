@@ -11,7 +11,7 @@ export function resolveImports(config: Options) {
   const allHooks = hooks || []
 
   addImportsSources({
-    from: libraryName,
+    from: `${libraryName}/${config.importFrom}`,
     imports: [
       ...allImports.map(i => [i, config.importPrefix + i] as PresetImport),
       ...allLocales.map(i => [i, insertPrefix(i, config.localePrefix)] as PresetImport),

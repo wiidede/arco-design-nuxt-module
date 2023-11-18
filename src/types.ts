@@ -27,7 +27,7 @@ export interface Options extends TransformOptions {
   /**
    * A list of icons component that need to be automatically imported.
    *
-   * @default * all icons from '@arco-design/web-vue/es/icon'
+   * @default * all icons from '@arco-design/web-vue/(es|lib)/icon'
    *
    * @example
    * ```ts
@@ -140,6 +140,14 @@ export interface Options extends TransformOptions {
    * ```
    */
   noStylesComponents: string[]
+
+  /**
+   * import from es or lib
+   *
+   * @default 'es'
+   *
+   */
+  importFrom: 'es' | 'lib'
 }
 
 export interface InnerOptions extends Options {

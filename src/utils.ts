@@ -33,8 +33,8 @@ export function computeOptions(options: Options): InnerOptions {
   }
 }
 
-export function genLibraryImport(list: string[]): string {
-  return `import {${list.join(',')}} from '${libraryName}';`
+export function genLibraryImport(list: string[], options: Options): string {
+  return `import {${list.join(',')}} from '${libraryName}/${options.importFrom}';`
 }
 
 export function genSideEffectsImport(value: string): string {

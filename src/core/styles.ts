@@ -17,9 +17,9 @@ export function getStyleDir(config: InnerOptions, name: string) {
   }
 
   if (type === 'less')
-    return `${libraryName}/es/${dir}/style/index.js`
+    return `${libraryName}/${config.importFrom}/${dir}/style/index.js`
   if (type === 'css' || type)
-    return `${libraryName}/es/${dir}/style/css.js`
+    return `${libraryName}/${config.importFrom}/${dir}/style/css.js`
 }
 
 export function resolveStyles(config: InnerOptions, name: string) {
