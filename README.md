@@ -87,7 +87,7 @@ interface Options {
   /**
    * A list of icons component that need to be automatically imported.
    *
-   * @default * all icons from '@arco-design/web-vue/es/icon'
+   * @default * all icons from '@arco-design/web-vue/(es|lib)/icon'
    *
    * @example
    * ```ts
