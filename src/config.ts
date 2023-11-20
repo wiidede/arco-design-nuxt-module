@@ -20,12 +20,13 @@ export const allHooks: Options['hooks'] = [
 export const allImportsWithStyle: Options['imports'] = [
   'Notification',
   'Message',
+  'Modal',
 ]
 
 export const allComponents = Object.keys(AllComponents).filter(name =>
   !allLocales.includes(name)
   && !allHooks.includes(name as any)
-  && !allImportsWithStyle.includes(name as any)
+  && !['Notification', 'Message'].includes(name as any)
   && !['install', 'default'].includes(name),
 )
 

@@ -54,10 +54,10 @@ export interface Options extends TransformOptions {
    *
    * @default
    * ```ts
-   *  ['Notification', 'Message']
+   *  ['Notification', 'Message', 'Modal']
    * ```
    */
-  imports: false | ('Notification' | 'Message')[]
+  imports: false | ('Notification' | 'Message' | 'Modal')[]
 
   /**
    * Prefix of the import name.

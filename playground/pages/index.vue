@@ -10,6 +10,14 @@ function handleMessage() {
 function handleNotification() {
   ANotification.success('This is a success message!')
 }
+function handleModal() {
+  AModal.info({
+    title: 'Info',
+    content: 'This is a info message',
+  })
+}
+
+const visible = ref(false)
 </script>
 
 <template>
@@ -22,6 +30,12 @@ function handleNotification() {
     </a-button>
     <a-button status="success" @click="handleNotification">
       Success Notification
+    </a-button>
+    <a-button @click="handleModal">
+      Modal Function
+    </a-button>
+    <a-button @click="visible = true">
+      Modal Template
     </a-button>
   </div>
   <a-divider />
@@ -53,4 +67,10 @@ function handleNotification() {
       </a-card>
     </a-col>
   </a-row>
+  <AModal v-model:visible="visible">
+    <template #title>
+      h
+    </template>
+    modal template
+  </AModal>
 </template>
