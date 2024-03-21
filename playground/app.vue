@@ -1,13 +1,17 @@
 <script setup lang="ts">
+import enUS from "@arco-design/web-vue/es/locale/lang/en-US";
+
 useHead({
   title: 'Arco Design Nuxt Module Playground',
 })
 </script>
 
 <template>
-  <NuxtLayout>
-    <NuxtPage />
-  </NuxtLayout>
+  <AConfigProvider :locale="enUS">
+    <NuxtLayout>
+      <NuxtPage />
+    </NuxtLayout>
+  </AConfigProvider>
 </template>
 
 <style>
