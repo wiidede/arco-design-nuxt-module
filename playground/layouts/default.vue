@@ -16,7 +16,7 @@ const onClickMenuItem: ((key: string) => void) | undefined = (key) => {
 </script>
 
 <template>
-  <a-layout class="layout-demo">
+  <a-layout class="layout-demo" has-sider>
     <a-layout-sider
       theme="dark"
       breakpoint="lg"
