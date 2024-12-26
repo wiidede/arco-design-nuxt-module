@@ -214,7 +214,8 @@ That's it! You can now use Arco Design Nuxt Module in your Nuxt app ✨
 ## Other
 
 - [Release Notes](https://github.com/wiidede/arco-design-nuxt-module/releases)
-- [Online playground](https://stackblitz.com/github/wiidede/arco-design-nuxt-module?file=playground%2Fapp.vue)
+- [Demo](https://github.com/wiidede/arco-nuxt-demo)
+- [Online playground](https://stackblitz.com/github/wiidede/arco-nuxt-demo?file=pages%2Findex.vue)
 <!-- - [📖 &nbsp;Documentation](https://example.com) -->
 
 ## Credits
