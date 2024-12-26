@@ -21,11 +21,16 @@ Nuxt Module for Arco Design Vue. Automatically import components, icons and more
 
 ## Quick Setup
 
-1. Add `arco-design-nuxt-module` dependency to your project(`@arco-design/web-vue` is required in your project)
+1. Add `arco-design-nuxt-module` dependency to your project
 
 ```bash
 npx nuxi@latest module add arco-design-nuxt-module
 ```
+
+> [!NOTE]
+> If you do not have `@arco-design/web-vue` installed, please install it first
+>
+> `pnpm install @arco-design/web-vue`
 
 2. Add `arco-design-nuxt-module` to the `modules` section of `nuxt.config.ts`
 
