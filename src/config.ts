@@ -1,6 +1,6 @@
-import * as AllComponents from '@arco-design/web-vue'
-
 import type { Options } from './types'
+
+import * as AllComponents from '@arco-design/web-vue'
 
 export const libraryName = '@arco-design/web-vue'
 

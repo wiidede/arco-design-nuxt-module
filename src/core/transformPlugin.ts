@@ -1,19 +1,19 @@
-import { createUnplugin } from 'unplugin'
+import type { TransformOptions } from '../types'
 import MagicString from 'magic-string'
+import { createUnplugin } from 'unplugin'
 import { allImportsWithStyle, libraryName } from '../config'
 import {
   camelize,
   genSideEffectsImport,
   toRegExp,
 } from '../utils'
-import type { TransformOptions } from '../types'
 
 interface PluginOptions extends TransformOptions {
   sourcemap?: boolean
   transformStyles: (name: string) => undefined | string
 }
 
-const componentsRegExp = /(?<=[ (])_?resolveComponent\(\s*["'](lazy-|Lazy)?([^'"]*?)["'][\s,]*[^)]*\)/g
+const componentsRegExp = /(?<=[ (])_?resolveComponent\(\s*["'](lazy-|Lazy)?([^'"]*)["'][^)]*\)/g
 const importsRegExp = toRegExp(allImportsWithStyle || [], 'g')
 
 export const transformPlugin = createUnplugin((options: PluginOptions) => {

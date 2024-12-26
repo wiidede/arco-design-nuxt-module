@@ -1,7 +1,7 @@
-import { addImportsSources } from '@nuxt/kit'
 import type { PresetImport } from 'unimport'
-import { libraryName } from '../config'
 import type { Options } from '../types'
+import { addImportsSources } from '@nuxt/kit'
+import { libraryName } from '../config'
 import { insertPrefix } from '../utils'
 
 export function resolveImports(config: Options) {

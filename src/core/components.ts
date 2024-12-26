@@ -1,7 +1,7 @@
+import type { InnerOptions } from '../types'
 import { addComponent } from '@nuxt/kit'
 import { libraryName } from '../config'
 import { hyphenate } from '../utils'
-import type { InnerOptions } from '../types'
 
 export function resolveComponents(config: InnerOptions) {
   const { components, subComponentsMap, icons } = config

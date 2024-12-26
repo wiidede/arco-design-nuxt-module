@@ -1,6 +1,6 @@
+import type { InnerOptions } from '../types'
 import { allImportsWithStyle, libraryName } from '../config'
 import { hyphenate } from '../utils'
-import type { InnerOptions } from '../types'
 
 export function getStyleDir(config: InnerOptions, name: string) {
   if (config.importStyle === false)

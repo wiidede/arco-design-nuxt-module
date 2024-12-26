@@ -1,3 +1,4 @@
+import type { Options } from './types'
 import { defineNuxtModule } from '@nuxt/kit'
 import { defaults } from './config'
 import {
@@ -6,9 +7,8 @@ import {
   resolveStyles,
   transformPlugin,
 } from './core/index'
-import type { Options } from './types'
-import { computeOptions } from './utils'
 import { resolveOptions } from './core/options'
+import { computeOptions } from './utils'
 
 export default defineNuxtModule<Options>({
   meta: {

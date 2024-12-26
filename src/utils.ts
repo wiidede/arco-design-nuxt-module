@@ -1,5 +1,5 @@
-import { libraryName } from './config'
 import type { InnerOptions, Options } from './types'
+import { libraryName } from './config'
 
 export function isArray(value: any): value is any[] {
   return Array.isArray(value)
@@ -50,5 +50,5 @@ export function hyphenate(value: string): string {
 }
 
 export function insertPrefix(value: string, prefix: string): string {
-  return value.replace(/^(\w+?)(\B)([A-Z])/, (m, a, b, c) => `${a}${prefix}${c}`)
+  return value.replace(/^(\w+?)([A-Z])/, (m, a, b) => `${a}${prefix}${b}`)
 }
