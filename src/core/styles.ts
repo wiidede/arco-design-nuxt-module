@@ -11,7 +11,7 @@ export function getStyleDir(config: InnerOptions, name: string) {
 
   if (config.theme) {
     if (type === 'less')
-      return `${config.theme}/theme.less`
+      return `${config.theme}/index.less`
     if (type === 'css' || type)
       return `${config.theme}/css/arco.css`
   }

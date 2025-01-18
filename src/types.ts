@@ -125,7 +125,9 @@ export interface Options extends TransformOptions {
    *
    * @example '@arco-themes/vue-digitforce'
    *
-   * It will full import the theme style file(theme.less or css/arco.css)
+   * It will full import the theme style file(index.less or css/arco.css)
+   *
+   * Recommended just directly import index.less or css/arco.css in your project and disable `importStyle` rather than using this option
    *
    * for more detail about theme, see https://arco.design/docs/designlab/use-theme-package
    */
