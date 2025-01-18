@@ -1,7 +1,7 @@
 {
   "name": "arco-design-nuxt-module",
   "type": "module",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "packageManager": "pnpm@9.15.4",
   "description": "Arco Design Nuxt Module",
   "license": "MIT",
